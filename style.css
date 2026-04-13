@@ -18,13 +18,7 @@ html {
     background-position: center;
     display: flex;
     flex-direction: column;
-}
-
-.hero > *:not(nav):not(.tech-stack-hero) {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex: 1;
 }
 
 nav {
@@ -66,16 +60,16 @@ nav ul li a:hover {
 }
 
 .prof {
-    width: 550px;
+    float: right;
+    width: 600px;
     position: relative;
-    order: 2;
 }
 
 .content {
-    position: relative;
-    transform: none;
-    order: 1;
-    padding-left: 8%;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
 }
 
 h1 {
