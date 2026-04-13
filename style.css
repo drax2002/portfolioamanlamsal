@@ -21,6 +21,13 @@ html {
     justify-content: space-between;
 }
 
+.hero-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    flex-wrap: wrap;
+}
 nav {
     display: flex;
     align-items: center;
@@ -67,11 +74,9 @@ nav ul li a:hover {
     height: auto;
     width: 100%;
 }
+
 .content {
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
+    max-width: 600px;
 }
 
 h1 {
