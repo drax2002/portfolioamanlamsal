@@ -57,6 +57,12 @@ nav ul li a:hover {
     position: relative;
 }
 
+.micro {
+    float: right;
+    width: 900px;
+    position: relative;
+}
+
 .content {
     position: absolute;
     top: 50%;
@@ -356,4 +362,47 @@ footer p:nth-child(2) {
     color: white;
     bottom: 35px;
     font-size: 14px;
+}
+
+.thumbs-up-btn {
+    background-color: #f9004d;
+    color: white;
+    border: 2px solid transparent;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: .4s;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.thumbs-up-btn:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
+.thumbs-up-btn.liked {
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+.plus-one {
+    position: absolute;
+    color: #f9004d;
+    font-size: 20px;
+    font-weight: bold;
+    animation: floatUp 1s ease-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
 }
