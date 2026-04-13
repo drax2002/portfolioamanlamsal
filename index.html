@@ -218,6 +218,19 @@
             }
         }
 
+        // Smooth scroll for nav links
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
         // Slide down animation on scroll
         const sections = document.querySelectorAll('.about, .skills, .contact-me');
         const observer = new IntersectionObserver((entries) => {
