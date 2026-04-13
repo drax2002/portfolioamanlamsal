@@ -60,11 +60,13 @@ nav ul li a:hover {
 }
 
 .prof {
-    float: right;
     width: 600px;
-    position: relative;
 }
 
+.prof img {
+    height: auto;
+    width: 100%;
+}
 .content {
     position: absolute;
     top: 50%;
