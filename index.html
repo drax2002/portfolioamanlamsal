@@ -217,6 +217,20 @@
                 setTimeout(() => plusOne.remove(), 1000);
             }
         }
+
+        // Slide down animation on scroll
+        const sections = document.querySelectorAll('.about, .skills, .contact-me');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-down');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
     </script>
 
 </body>
